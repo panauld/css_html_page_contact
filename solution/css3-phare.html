@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nous joindre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/css3-phare.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div>
+        <section>
+            <div>
+                <img src="image/phare-960px.jpg" alt="photo" />
+                <h1>Le phare du bout du monde</h1>
+            </div>
+            <form name="form" method="get" action="contact.html">
+
+                <fieldset>
+
+                    <h2>Contactez-nous</h2>
+
+                    <div>
+                        <label for="name" class="star">Nom</label>
+                        <input name="name" type="text" id="name" placeholder="Nom de famille suivi du prénom" required title="Ce champ est obligatoire">
+                    </div>
+                    <div>
+                        <label for="email" class="star">Email</label>
+                        <input name="email" type="email" id="email" placeholder="exemple@exemple.com" required title="Ce champ est obligatoire">
+                    </div>
+                    <div>
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" name="phone" id="phone" placeholder="514 123 1234">
+                    </div>
+                    <div>
+                        <label for="zip">Code postal</label>
+                        <input name="zip" type="text" id="zip" placeholder="H2M1M2" pattern="^(?!.*[DFIOQU])[A-VXY][0-9][A-Z]●?[0-9][A-Z][0-9]$" title="Ex: H2M1M2">
+                    </div>
+
+                    <input type="submit" name="submitButton" id="submitButton" value="Soumettre">
+
+                </fieldset>
+
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
